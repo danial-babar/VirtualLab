@@ -105,7 +105,7 @@ export default function ElectricFieldSimulation({
 
     // Event listeners for dragging charges
     chargeGroups
-      .on('mousedown', (event: d3.D3Event, d: Charge) => {
+      .on('mousedown', (event: MouseEvent, d: Charge) => {
         setIsDragging(d.id);
         event.preventDefault();
       });

@@ -12,10 +12,31 @@ const categories = [
     icon: '⚛️',
     experiments: [
       {
+        id: 'electric-field',
+        title: 'Electric Field Simulator',
+        description: 'Visualize electric fields, field lines, and forces between charges',
+        image: '⚡',
+        path: '/electric-field'
+      },
+      {
+        id: 'collision',
+        title: 'Collision Physics',
+        description: 'Simulate elastic and inelastic collisions and observe conservation of momentum',
+        image: '🎱',
+        path: '/collision'
+      },
+      {
+        id: 'orbital',
+        title: 'Orbital Mechanics',
+        description: 'Explore planetary motion, gravitational forces, and Kepler\'s laws',
+        image: '🪐',
+        path: '/orbital'
+      },
+      {
         id: 'ohms-law',
         title: 'Ohm\'s Law',
         description: 'Explore the relationship between voltage, current, and resistance',
-        image: '⚡',
+        image: '🔌',
         path: '/ohms-law'
       },
       {
