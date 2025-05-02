@@ -3,8 +3,26 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
+// Define experiment type to fix TypeScript errors
+interface Experiment {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  path: string;
+  comingSoon?: boolean;
+}
+
+interface Category {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  experiments: Experiment[];
+}
+
 // All experiments data organized by category
-const categories = [
+const categories: Category[] = [
   {
     id: 'physics',
     name: 'Physics',
@@ -69,6 +87,13 @@ const categories = [
     icon: '🧪',
     experiments: [
       {
+        id: 'gas-laws',
+        title: 'Gas Laws Simulator',
+        description: 'Explore the relationship between pressure, volume, and temperature in gases',
+        image: '💨',
+        path: '/gas-laws'
+      },
+      {
         id: 'titration',
         title: 'Acid-Base Titration',
         description: 'Determine the concentration of an acid or base through titration',
@@ -76,12 +101,18 @@ const categories = [
         path: '/titration'
       },
       {
+        id: 'molecular-viewer',
+        title: 'Molecular Viewer',
+        description: 'Visualize and interact with 3D molecular structures',
+        image: '🔍',
+        path: '/molecular-viewer'
+      },
+      {
         id: 'periodic-table',
         title: 'Interactive Periodic Table',
         description: 'Explore elements and their properties',
         image: '📊',
-        path: '/periodic-table',
-        comingSoon: true
+        path: '/periodic-table'
       }
     ]
   },
@@ -96,16 +127,28 @@ const categories = [
         title: 'Cell Membrane Transport',
         description: 'Simulate diffusion and osmosis across cell membranes',
         image: '🔬',
-        path: '/cell-membrane',
-        comingSoon: true
+        path: '/cell-membrane'
       },
       {
         id: 'genetics',
         title: 'Genetics Simulator',
         description: 'Model inheritance patterns and genetic crosses',
         image: '🧬',
-        path: '/genetics',
-        comingSoon: true
+        path: '/genetics'
+      },
+      {
+        id: 'photosynthesis',
+        title: 'Photosynthesis Simulator',
+        description: 'Visualize light and dark reactions in photosynthesis',
+        image: '🌿',
+        path: '/photosynthesis'
+      },
+      {
+        id: 'cell-division',
+        title: 'Cell Division Visualizer',
+        description: 'Explore mitosis and meiosis processes',
+        image: '🧫',
+        path: '/cell-division'
       }
     ]
   }
