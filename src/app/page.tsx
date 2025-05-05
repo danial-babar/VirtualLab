@@ -87,6 +87,27 @@ const categories: Category[] = [
     icon: '🧪',
     experiments: [
       {
+        id: 'chemical-equilibrium',
+        title: 'Chemical Equilibrium Simulator',
+        description: 'Visualize how reaction conditions affect chemical equilibrium',
+        image: '⚖️',
+        path: '/chemical-equilibrium'
+      },
+      {
+        id: 'acid-base-reactions',
+        title: 'Acid-Base Reactions Simulator',
+        description: 'Visualize titrations and monitor pH changes between acids and bases',
+        image: '🧪',
+        path: '/acid-base-reactions'
+      },
+      {
+        id: 'chemical-bonding',
+        title: 'Chemical Bonding Visualizer',
+        description: 'Explore different types of chemical bonds and molecular structures',
+        image: '⚛️',
+        path: '/chemical-bonding'
+      },
+      {
         id: 'gas-laws',
         title: 'Gas Laws Simulator',
         description: 'Explore the relationship between pressure, volume, and temperature in gases',
