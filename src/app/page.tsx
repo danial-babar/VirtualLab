@@ -151,6 +151,48 @@ const categories: Category[] = [
     icon: '🧬',
     experiments: [
       {
+        id: 'enzyme-kinetics',
+        title: 'Enzyme Kinetics Simulator',
+        description: 'Visualize enzyme-substrate interactions and factors affecting reaction rates',
+        image: '🧪',
+        path: '/enzyme-kinetics'
+      },
+      {
+        id: 'protein-synthesis',
+        title: 'Protein Synthesis Simulator',
+        description: 'Visualize DNA transcription and mRNA translation processes',
+        image: '🧫',
+        path: '/protein-synthesis'
+      },
+      {
+        id: 'neural-signaling',
+        title: 'Neural Signaling Simulator',
+        description: 'Explore action potentials and synaptic transmission between neurons',
+        image: '🧠',
+        path: '/neural-signaling'
+      },
+      {
+        id: 'population-genetics',
+        title: 'Population Genetics Simulator',
+        description: 'Model gene frequencies and evolutionary forces in populations',
+        image: '👥',
+        path: '/population-genetics'
+      },
+      {
+        id: 'ecological-succession',
+        title: 'Ecological Succession',
+        description: 'Simulate how ecosystems develop and change over time',
+        image: '🌱',
+        path: '/ecological-succession'
+      },
+      {
+        id: 'circulatory-system',
+        title: 'Circulatory System Simulator',
+        description: 'Visualize blood flow, heart function, and oxygen exchange',
+        image: '❤️',
+        path: '/circulatory-system'
+      },
+      {
         id: 'cell-membrane',
         title: 'Cell Membrane Transport',
         description: 'Simulate diffusion and osmosis across cell membranes',
