@@ -4,7 +4,7 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import ExperimentLayout from '@/components/ExperimentLayout';
 
-// Dynamically import components with client-side only rendering
+
 const ElectricFieldSimulation = dynamic(() => import('./Simulation'), { ssr: false });
 const ElectricFieldControls = dynamic(() => import('./Controls'), { ssr: false });
 

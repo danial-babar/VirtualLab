@@ -30,6 +30,13 @@ const categories: Category[] = [
     icon: '⚛️',
     experiments: [
       {
+        id: 'wave-interference',
+        title: 'Wave Interference Simulator',
+        description: 'Visualize constructive and destructive interference patterns between waves',
+        image: '〰️',
+        path: '/wave-interference'
+      },
+      {
         id: 'electric-field',
         title: 'Electric Field Simulator',
         description: 'Visualize electric fields, field lines, and forces between charges',
